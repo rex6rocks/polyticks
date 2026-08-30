@@ -1,0 +1,14 @@
+{
+  "name": "polyticks-supabase-proxy",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker reverse proxy for Supabase - bypasses ISP blocking in India",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}

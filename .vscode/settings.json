@@ -1,0 +1,8 @@
+{
+    "aider-composer.pythonPath": "C:\\Users\\RexAMD\\.aider-env\\Scripts",
+    "deno.enable": true,
+    "deno.enablePaths": [
+        "supabase/functions"
+    ],
+    "deno.lint": true
+}

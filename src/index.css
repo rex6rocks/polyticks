@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  /* Base surfaces matching Flutter AppTheme */
+  --bg-base: #0A1628;
+  --bg-panel: #152342;
+  --bg-raised: #1E3054;
+  --bg-inset: #0D1626;
+  --border-hairline: rgba(36, 52, 80, 0.6);
+  --border-strong: #243450;
+
+  /* Accent – Saffron */
+  --accent: #FF9933;
+  --accent-soft: rgba(255, 153, 51, 0.15);
+
+  --text-primary: #FFFFFF;
+  --text-secondary: #94A3B8;
+  --text-muted: #64748B;
+
+  --janta: #38BDF8;
+  --party: #FF9933;
+  --member: #A855F7;
+  --admin: #EC4899;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'ss01';
+  letter-spacing: -0.005em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  letter-spacing: -0.02em;
+}
+
+/* Refined scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.15);
+  border-radius: 9999px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.28);
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+/* Shared surface utilities – quiet, editorial panels */
+.panel {
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-hairline);
+  border-radius: 1rem;
+}
+
+.panel-hover {
+  transition: border-color 160ms ease, background-color 160ms ease;
+}
+.panel-hover:hover {
+  border-color: var(--border-strong);
+}
+
+/* Elevation: soft ambient shadow instead of colored glow */
+.elevate-sm { box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
+.elevate-md { box-shadow: 0 4px 16px rgba(0, 0, 0, 0.28); }
+.elevate-lg { box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35); }
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--accent);
+  color: #14100C;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: filter 140ms ease, transform 100ms ease;
+}
+.btn-primary:hover { filter: brightness(1.08); }
+.btn-primary:active { transform: scale(0.98); }
+
+.btn-ghost {
+  color: var(--text-secondary);
+  border-radius: 0.75rem;
+  transition: color 140ms ease, background-color 140ms ease;
+}
+.btn-ghost:hover {
+  color: var(--text-primary);
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+/* Animation helpers */
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(0.98); }
+}
+
+.animate-pulse-subtle {
+  animation: pulseSubtle 3s infinite ease-in-out;
+}

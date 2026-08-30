@@ -1,0 +1,8 @@
+{
+  "name": "Polyticks",
+  "description": "A political social media platform for civic engagement featuring hyper-local feeds, verified civic identity, party profiles, community polls, 24h SLA moderation queue, and community-driven fact-checking trust engine.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

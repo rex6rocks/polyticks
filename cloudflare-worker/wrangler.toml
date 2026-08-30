@@ -1,0 +1,11 @@
+name = "polyticks-api"
+main = "src/index.js"
+compatibility_date = "2026-08-28"
+
+[observability]
+enabled = true
+
+# NOTE: Free plan limitations
+# - `*.workers.dev` subdomain is not accessible on the free plan
+# - Need a custom domain attached to a Cloudflare zone (polyticks.in)
+# - Routes below attach the Worker to api.polyticks.in (CNAME the apex)
