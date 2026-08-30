@@ -456,3 +456,4 @@ During this complete review of the v4.0 implementation codebase, the following d
 3. **`docs/V4_SPEC.md` & `ProjectTracker.md`**:
    - All v4.0 deliverables (DigiLocker mock bridge, Razorpay subscription checkout, B2B analytics rollups, Right-of-Reply portal, registration-lock trigger) are fully built in `lib/` and verified with 0 linter errors.
    - Future post-launch / v4.1 config items (such as live DigiLocker production credentials & live Razorpay keys) remain isolated in configuration flags (`lib/config.dart`).
+Sun Aug 30 01:02:37 PM UTC 2026
